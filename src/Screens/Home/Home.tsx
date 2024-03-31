@@ -57,7 +57,7 @@ export const HomeScreen = () => {
       <div className={styleDiv}>
         <CurrentDate country={currentCountry} />
         <CurrentWeather />
-        <CurrentCountry />
+        
       </div>
       <div className={styleDiv}>
         <TimeLine />

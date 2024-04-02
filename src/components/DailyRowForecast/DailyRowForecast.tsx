@@ -1,12 +1,13 @@
-import Clouds1Icon from "../../SVG/Clouds1";
+
 import { DailyRowForecastProps } from "./DailyRowForecast.props"
 
-const DailyRowForecast: React.FC<DailyRowForecastProps> = (props) => {
+const DailyRowForecast= ({formatdate, avgTemp, icon}:any) => {
+
   return (
-    <div className="flex flex-row justify-between mx-6 content-center items-center">
-      <Clouds1Icon Width="50" Height="50" />
-      <p className="text-xl font-bold">20°C</p>
-      <p className="text-xl font-bold">Friday, 1 Sep</p>
+    <div className="flex flex-row justify-between mx-6 content-center items-center pb-2">
+      {icon}
+      <p className="text-xl font-bold">{Math.floor(avgTemp)}&deg;C</p>
+      <p className="text-xl font-bold w-[8rem] flex justify-end">{formatdate}</p>
     </div>
   )
 }

@@ -7,7 +7,7 @@ import { Theme } from "../../components/Theme/Theme";
 import TimeLine from "../../components/TimeLine/TimeLine";
 import TodayPrognosis from "../../components/TodayPrognosis/TodayPrognosis";
 import CurrentWeather from "../../components/CurrentWeather/CurrentWeather";
-import { CurrentCountry } from "../../components/CurrentCountry";
+
 
 export const HomeScreen = () => {
   const [error, setError] = useState<any>(null);
@@ -56,8 +56,7 @@ export const HomeScreen = () => {
       <Header onSearch={(country: any) => setCurrentCountry(country)} />
       <div className={styleDiv}>
         <CurrentDate country={currentCountry} />
-        <CurrentWeather />
-        
+        <CurrentWeather />       
       </div>
       <div className={styleDiv}>
         <TimeLine />

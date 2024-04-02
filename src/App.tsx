@@ -1,10 +1,7 @@
-import { Navigation } from './Navigation/Navigation';
-
+import { Navigation } from "./Navigation/Navigation";
 
 function App() {
-  return (
-    <Navigation />
-  );
+  return <Navigation />;
 }
 
 export default App;

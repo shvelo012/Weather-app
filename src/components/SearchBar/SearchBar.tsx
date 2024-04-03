@@ -2,6 +2,7 @@ import { useState } from "react";
 import { SearchIcon } from "../../SVG/SearchIcon";
 import { COLORS } from "../../Theme/COLORS";
 
+
 export const SearchBar = ({ onSearch }: any) => {
   const [inputWord, setInputWord] = useState("");
 

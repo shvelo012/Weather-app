@@ -10,7 +10,7 @@ export const Cloudy = ({ Width, Height }: IconProps) => {
       x="0px"
       y="0px"
       viewBox="0 0 24 24"
-      enable-background="new 0 0 24 24"
+      enableBackground="new 0 0 24 24"
       xmlSpace="preserve"
       width={Width}
       height={Height}
@@ -18,8 +18,8 @@ export const Cloudy = ({ Width, Height }: IconProps) => {
       <g>
         <rect x="0" fill="none" width="24" height="24" />
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           fill="#E5E5E5"
           d="M20.8403,6.4685C20.274,4.0722,18.213,2.2941,15.75,2.2941
 		c-2.8995,0-5.25,2.4616-5.25,5.5001c0,0.1964,0.0113,0.3896,0.03,0.5799C9.6345,8.7512,9,9.6665,9,10.7405

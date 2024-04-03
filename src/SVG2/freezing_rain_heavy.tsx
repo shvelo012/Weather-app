@@ -10,15 +10,15 @@ export const Freezing_rain_heavy = ({ Width, Height }: IconProps) => {
       x="0px"
       y="0px"
       viewBox="0 0 24 24"
-      enable-background="new 0 0 24 24"
+      enableBackground="new 0 0 24 24"
       xmlSpace="preserve"
 	  width={Width}
       height={Height}
     >
       <rect fill="none" width="24" height="24" />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         fill="#0072F5"
         d="M21.0001,11.9998h-18c-0.552,0-1,1.0001-1,1.0001
 	s0.217,0.7189,0.535,0.8859c0.302,0.159,0.465,0.5,0.465,0.842v4.272c0,0.553,1,1,1,1s1-0.447,1-1v-4c0-0.552,1-1,1-1s1,0.448,1,1v4
@@ -27,8 +27,8 @@ export const Freezing_rain_heavy = ({ Width, Height }: IconProps) => {
 	c0-0.342,0.162-0.683,0.465-0.842c0.318-0.1669,0.535-0.8859,0.535-0.8859S21.5521,11.9998,21.0001,11.9998"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         fill="#D5DEE8"
         d="M19.0093,9.8126L19.0093,9.8126
 	c-0.2552-0.1059-0.3764-0.3983-0.2705-0.6535l2.0099-4.8499c0.1057-0.2552,0.3981-0.3764,0.6535-0.2707

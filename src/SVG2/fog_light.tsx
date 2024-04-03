@@ -10,14 +10,14 @@ export const Fog_light = ({ Width, Height }: IconProps) => {
       x="0px"
       y="0px"
       viewBox="0 0 24 24"
-      enable-background="new 0 0 24 24"
+      enableBackground="new 0 0 24 24"
       xmlSpace="preserve"
 	  width={Width}
       height={Height}
     >
       <rect
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         fill="none"
         width="24"
         height="24"
@@ -35,8 +35,8 @@ export const Fog_light = ({ Width, Height }: IconProps) => {
           <stop offset="1" style={{ stopColor: '#FFFFFF' }} />
         </linearGradient>
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           fill="url(#SVGID_1_)"
           d="M17.787,7.313C17.032,4.263,14.284,2,11,2
 		C7.134,2,4,5.133,4,9c0,0.25,0.015,0.496,0.04,0.738C2.846,10.218,2,11.383,2,12.75C2,14.544,3.455,16,5.25,16h12.4

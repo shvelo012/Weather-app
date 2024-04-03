@@ -1,7 +1,6 @@
 import { CurrLocationIcon } from "../../SVG/CurrLocationIcon";
 import { SunriseSunset } from "./CurrWeatherInnerComps/SunRise-SunSet/Sunrise&sunset";
 import { WeatherFeatures } from "./CurrWeatherInnerComps/WeatherFeatures/WeatherFeatures";
-import { SearchIcon } from "../../SVG/SearchIcon";
 import { SunriseIcon } from "../../SVG/SunriseIcon";
 import { SunsetIcon } from "../../SVG/SunsetIcon";
 import { SunIcon } from "../../SVG/SunIcon";
@@ -9,6 +8,7 @@ import { HumidityIcon } from "../../SVG/HumidityIcon";
 import { WindSpeedIcon } from "../../SVG/WindSpeedIcon";
 import { PressureIcon } from "../../SVG/PressureIcon";
 import { UVIcon } from "../../SVG/UVIcon";
+import { Clear_day } from "../../SVG2/clear_day";
 
 export default function CurrentWeather() {
   return (
@@ -25,7 +25,7 @@ export default function CurrentWeather() {
       </section>
       <section className="flex flex-col justify-center items-center  mb-10">
         <div className="w-[12rem] h-[12rem] flex justify-center items-center">
-          <SunIcon Width={"150"} Height={"150"} />
+          <Clear_day Width={"150"} Height={"150"} />
         </div>
         <h2 className="text-3xl font-bold">Sunny</h2>
       </section>

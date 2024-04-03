@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import DailyRowForecast from "../DailyRowForecast/DailyRowForecast";
-import { Rain_light } from "../../SVG2/rain_light";
-import { Cloudy } from "../../SVG2/cloudy";
+import { weatherIconMap } from "../../WeatherCodes/WeatherCodes";
+
+const weatherCodes= weatherIconMap;
 
 const apikey = "QsbR1ArKHFa6tTqqxrKG5SOJw7RFmLMQ";
 let location = "new york";
@@ -13,15 +14,7 @@ export default function TimeLine() {
 
   function formatDate(dateString: any) {
     const date = new Date(dateString);
-    const weekdays = [
-      "Sun",
-      "Mon",
-      "Tue",
-      "Wed",
-      "Thu",
-      "Fri",
-      "Sat",
-    ];
+    const weekdays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
     const weekday = weekdays[date.getDay()];
     const formattedDate =
       weekday +
@@ -36,12 +29,17 @@ export default function TimeLine() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const timesteps = ["1d"];
+        const today = new Date();
+        const start = new Date(today);
+        const end = new Date(today);
+        end.setDate(end.getDate() + 5); // Forecast for the next 5 days
+
         const weatherForecastParams = new URLSearchParams({
           apikey: apikey,
           location,
           units,
-          timesteps: timesteps.join(","),
+          startTime: start.toISOString(),
+          endTime: end.toISOString(),
         });
 
         const response = await fetch(
@@ -66,16 +64,8 @@ export default function TimeLine() {
     return <div>Loading...</div>;
   }
 
-  // fetch only next 5 day data 
+  // fetch only next 5 day data
   const forecast = forecastData.slice(0, 5);
-
-  
-  // check if fetched data api weatherCodeMax is in the weatherIconMap obj 
-  const weatherIconMap:{ [key: number]: JSX.Element } = {
-    4200: <Rain_light Width={"45"} Height={"45"} />,
-    1001: <Cloudy Width={"45"} Height={"45"} />,
-  };
-
   
   
   
@@ -88,7 +78,11 @@ export default function TimeLine() {
         {forecast.map((day) => (
           <div key={day.time}>
             <DailyRowForecast
-              icon={day.values.weatherCodeMax in weatherIconMap ? weatherIconMap[day.values.weatherCodeMax] : 'Not Found'}
+              icon={
+                day.values.weatherCodeMax in weatherCodes
+                  ? weatherCodes[day.values.weatherCodeMax]
+                  : "Not Found"
+              }
               formatdate={formatDate(day.time)}
               avgTemp={day.values.temperatureAvg}
             />

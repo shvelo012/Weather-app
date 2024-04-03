@@ -10,15 +10,15 @@ export const Ice_pallets_heavy = ({ Width, Height }: IconProps) => {
       x="0px"
       y="0px"
       viewBox="0 0 24 24"
-      enable-background="new 0 0 24 24"
+      enableBackground="new 0 0 24 24"
       xmlSpace="preserve"
 	  width={Width}
       height={Height}
     >
       <rect fill="none" width="24" height="24" />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         fill="#0072F5"
         d="M13.0059,20.9617l-1.531-3.696l-3.695,1.531l1.531,3.696
 	L13.0059,20.9617z M9.5079,13.5866l-1.848,0.765l0.766,1.848l1.847-0.7659L9.5079,13.5866z M19.4879,20.8648l-1.531-3.696
@@ -26,8 +26,8 @@ export const Ice_pallets_heavy = ({ Width, Height }: IconProps) => {
 	 M15.9899,13.4897l-1.848,0.765l0.765,1.848l1.848-0.765L15.9899,13.4897z"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         fill="#D5DEE8"
         d="M14.2919,2.0388c0.255,0.105,0.376,0.398,0.27,0.6529
 	l-3.827,9.2381c-0.079,0.1929-0.266,0.309-0.462,0.309c-0.064,0-0.129-0.012-0.191-0.0381c-0.255-0.1059-0.376-0.3979-0.271-0.6529

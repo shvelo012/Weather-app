@@ -10,7 +10,7 @@ export const Snow_light = ({ Width, Height }: IconProps) => {
       x="0px"
       y="0px"
       viewBox="0 0 24 24"
-      enable-background="new 0 0 24 24"
+      enableBackground="new 0 0 24 24"
       xmlSpace="preserve"
 	  width={Width}
       height={Height}
@@ -18,8 +18,8 @@ export const Snow_light = ({ Width, Height }: IconProps) => {
       <rect x="0" y="0" fill="none" width="24" height="24" />
       <g>
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           fill="#FFFFFF"
           d="M5.25,15.5c-1.5166,0-2.75-1.2334-2.75-2.75
 		c0-1.126,0.6777-2.1265,1.7266-2.5483l0.3506-0.1406l-0.04-0.3755C4.5137,9.4609,4.5,9.2324,4.5,9c0-3.584,2.916-6.5,6.5-6.5

@@ -10,7 +10,7 @@ export const Partly_cloudy_day = ({ Width, Height }: IconProps) => {
       x="0px"
       y="0px"
       viewBox="0 0 24 24"
-      enable-background="new 0 0 24 24"
+      enableBackground="new 0 0 24 24"
       xmlSpace="preserve"
 	  width={Width}
       height={Height}
@@ -18,8 +18,8 @@ export const Partly_cloudy_day = ({ Width, Height }: IconProps) => {
       <g>
         <rect fill="none" width="24" height="24" />
         <circle
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           fill="#FFD02F"
           cx="16.5"
           cy="9.4999"
@@ -27,8 +27,8 @@ export const Partly_cloudy_day = ({ Width, Height }: IconProps) => {
         />
         <g>
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             fill="#FFFFFF"
             d="M5.25,18.5c-1.5166,0-2.75-1.2334-2.75-2.7495
 			c0-1.1265,0.6777-2.127,1.7266-2.5483l0.3496-0.1406L4.5371,12.686C4.5137,12.4609,4.5,12.2324,4.5,12.0005

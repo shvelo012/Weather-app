@@ -1,6 +1,6 @@
 import { IconProps } from "../SVG/SVG.props";
 
-export const Ran_heavy = ({ Width, Height }: IconProps) => {
+export const Rain_heavy = ({ Width, Height }: IconProps) => {
   return (
     <svg
       version="1.1"
@@ -10,7 +10,7 @@ export const Ran_heavy = ({ Width, Height }: IconProps) => {
       x="0px"
       y="0px"
       viewBox="0 0 24 24"
-      enable-background="new 0 0 24 24"
+      enableBackground="new 0 0 24 24"
       xmlSpace="preserve"
 	  width={Width}
       height={Height}
@@ -18,8 +18,8 @@ export const Ran_heavy = ({ Width, Height }: IconProps) => {
       <g>
         <rect fill="none" width="24" height="24" />
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           fill="#0072F5"
           d="M17.2613,22.1666L17.2613,22.1666
 		c-0.2552-0.1059-0.3764-0.3983-0.2705-0.6535l1.6271-3.9261c0.1057-0.2552,0.3981-0.3764,0.6535-0.2707
@@ -51,8 +51,8 @@ export const Ran_heavy = ({ Width, Height }: IconProps) => {
         />
         <g>
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             fill="#FFFFFF"
             d="M5.249,15.4995c-1.5166,0-2.75-1.2334-2.75-2.75
 			c0-1.126,0.6777-2.1265,1.7266-2.5483l0.3486-0.1401L4.5361,9.687C4.5137,9.4614,4.499,9.2324,4.499,8.9995

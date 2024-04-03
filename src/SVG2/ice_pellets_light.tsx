@@ -10,23 +10,23 @@ export const Ice_pallets_light = ({ Width, Height }: IconProps) => {
       x="0px"
       y="0px"
       viewBox="0 0 24 24"
-      enable-background="new 0 0 24 24"
+      enableBackground="new 0 0 24 24"
       xmlSpace="preserve"
 	  width={Width}
       height={Height}
     >
       <rect fill="none" width="24" height="24" />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         fill="#0072F5"
         d="M12.2645,12.3374l-1.848,0.765l0.766,1.848l1.847-0.7659
 	L12.2645,12.3374z M7.0545,14.0714l-1.848,0.7661l0.766,1.847l1.847-0.764L7.0545,14.0714z M15.2325,16.0175l-1.848,0.765
 	l0.765,1.848l1.848-0.765L15.2325,16.0175z"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         fill="#D5DEE8"
         d="M15.1349,5.4088c0.255,0.105,0.376,0.398,0.27,0.6529
 	l-1.9134,4.6188c-0.079,0.1929-0.266,0.309-0.462,0.309c-0.064,0-0.129-0.012-0.191-0.0381c-0.255-0.1059-0.376-0.3979-0.271-0.6529

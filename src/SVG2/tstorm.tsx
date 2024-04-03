@@ -10,7 +10,7 @@ export const Tstorm= ({ Width, Height }: IconProps) => {
       x="0px"
       y="0px"
       viewBox="0 0 24 24"
-      enable-background="new 0 0 24 24"
+      enableBackground="new 0 0 24 24"
       xmlSpace="preserve"
 	  width={Width}
       height={Height}
@@ -18,8 +18,8 @@ export const Tstorm= ({ Width, Height }: IconProps) => {
       <g>
         <rect fill="none" width="24" height="24" />
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           fill="#0072F5"
           d="M17.2667,22.1674L17.2667,22.1674
 		c-0.2552-0.1059-0.3764-0.3983-0.2705-0.6535l1.6271-3.9261c0.1057-0.2552,0.3981-0.3764,0.6535-0.2707
@@ -44,8 +44,8 @@ export const Tstorm= ({ Width, Height }: IconProps) => {
 		c-0.1057,0.2552,0.0154,0.5479,0.2705,0.6535C5.4603,19.8288,5.7529,19.7075,5.8586,19.4523"
         />
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           fill="#E5E5E5"
           d="M20.8403,5.1745C20.274,2.778,18.213,1.0001,15.75,1.0001
 		c-2.8995,0-5.25,2.4616-5.25,5.4999c0,0.1964,0.0113,0.3898,0.03,0.5799C9.6345,7.4569,9,8.3723,9,9.4465
@@ -53,8 +53,8 @@ export const Tstorm= ({ Width, Height }: IconProps) => {
         />
         <g>
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             fill="#FFFFFF"
             d="M5.25,15.5c-1.5166,0-2.75-1.2334-2.75-2.7495
 			c0-1.1265,0.6777-2.127,1.7266-2.5483l0.3496-0.1406L4.5371,9.686C4.5137,9.4609,4.5,9.2324,4.5,9.0005c0-3.584,2.916-6.5,6.5-6.5
@@ -72,8 +72,8 @@ export const Tstorm= ({ Width, Height }: IconProps) => {
           />
         </g>
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           fill="#FFD02F"
           d="M12.6419,13.6998h2.9958c0.5208,0,0.8363,0.575,0.5569,1.0144
 		l-4.7331,7.4405c-0.1627,0.2555-0.4782,0.3676-0.7657,0.2718c-0.123-0.0492-0.123-0.0492-0.2322-0.1288

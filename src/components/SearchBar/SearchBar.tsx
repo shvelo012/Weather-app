@@ -7,7 +7,7 @@ import { SearchIcon } from '../../SVG/SearchIcon';
 import { SearchBarProps } from './SearchBar.props';
 
 const LocationSearchInput: React.FC<SearchBarProps> = (props) => {
-  const { getLatLngInHeader } = props;
+  const { onSearch } = props;
   const [address, setAddress] = useState('');
 
   const handleChange = (address: any) => {
@@ -17,7 +17,7 @@ const LocationSearchInput: React.FC<SearchBarProps> = (props) => {
   const handleSelect = (address: any) => {
     geocodeByAddress(address)
       .then((results: any) => getLatLng(results[0]))
-      .then((latLng: any) => {getLatLngInHeader(latLng); console.log(latLng)})
+      .then((latLng: any) => {onSearch(latLng); console.log(latLng)})
       .catch((error: any) => console.error('Error', error));
   };
 

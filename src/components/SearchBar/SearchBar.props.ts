@@ -1,3 +1,3 @@
 export interface SearchBarProps {
-  getLatLngInHeader: (value: any) => void;
+  onSearch: (value: any) => void;
 }

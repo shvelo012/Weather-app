@@ -1,9 +1,6 @@
 import { CurrentDate } from "../../components/CurrentDate/CurrentDate";
-import { CurrentLocation } from "../../components/CurrentLocation/CurrentLocation";
 import CurrentWeather from "../../components/CurrentWeather/CurrentWeather";
 import { Header } from "../../components/Header/Header";
-import { SearchBar } from "../../components/SearchBar/SearchBar";
-import { Theme } from "../../components/Theme/Theme";
 import TimeLine from "../../components/TimeLine/TimeLine";
 import TodayPrognosis from "../../components/TodayPrognosis/TodayPrognosis";
 

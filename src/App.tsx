@@ -1,4 +1,6 @@
+import { useState } from 'react';
 import { Navigation } from './Navigation/Navigation';
+import LoadGoogleMapsScript from './components/LoadGoogleMapsScript/LoadGoogleMapsScript';
 
 
 // const options = {method: 'GET', headers: {accept: 'application/json'}};
@@ -7,9 +9,22 @@ import { Navigation } from './Navigation/Navigation';
 //   .then(response => console.log(response))
 //   .catch(err => console.error(err));
 
+
+
 function App() {
+
+  const [isMapsLoaded, setMapsLoaded] = useState(false);
+
+  const handleMapLoad = () => {
+    console.log('Google Maps script loaded successfully');
+    setMapsLoaded(true);
+  };
+
   return (
-    <Navigation />
+    <>
+      <LoadGoogleMapsScript onLoad={handleMapLoad} />
+      {isMapsLoaded && <Navigation />}
+    </>
   );
 }
 

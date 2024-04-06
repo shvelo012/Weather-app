@@ -1,1 +1,3 @@
-export interface SearchBarProps { }
+export interface SearchBarProps {
+  onSearch: (value: any) => void;
+}

@@ -7,7 +7,7 @@ import CurrentWeather from "../../components/CurrentWeather/CurrentWeather";
 
 export const HomeScreen = () => {
   const [currentCountry, setCurrentCountry] = useState("");
- 
+
   useEffect(() => {
     // navigator.geolocation.getCurrentPosition(async (position) => {
     //   const { latitude, longitude } = position.coords;
@@ -18,6 +18,7 @@ export const HomeScreen = () => {
     //   setCurrentCountry(data.countryName);
     // });
   }, []);
+
 
   const styleDiv = "px-8 py-8 pb-2 w-[80rem] mx-auto flex items-center gap-12";
   return (

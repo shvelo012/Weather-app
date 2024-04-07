@@ -1,6 +1,9 @@
 import { CurrentLocation } from "../CurrentLocation/CurrentLocation";
-import { SearchBar } from "../SearchBar/SearchBar";
 import { Theme } from "../Theme/Theme";
+import LocationSearchInput from "../SearchBar/SearchBar";
+import { useState } from "react";
+import SearchBar from "../SearchBar/SearchBar";
+
 
 export const Header = ({onSearch}:any) => {
   return (

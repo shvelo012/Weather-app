@@ -7,7 +7,6 @@ import { WindSpeedIcon } from "../../SVG/WindSpeedIcon";
 import { PressureIcon } from "../../SVG/PressureIcon";
 import { UVIcon } from "../../SVG/UVIcon";
 import { Clear_day } from "../../SVG2/clear_day";
-import axios from "axios";
 import { useEffect, useState } from "react";
 
 

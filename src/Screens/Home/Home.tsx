@@ -9,14 +9,14 @@ export const HomeScreen = () => {
   const [currentCountry, setCurrentCountry] = useState("");
 
   useEffect(() => {
-    // navigator.geolocation.getCurrentPosition(async (position) => {
-    //   const { latitude, longitude } = position.coords;
-    //   const response = await fetch(
-    //     `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}&longitude=${longitude}`
-    //   );
-    //   const data = await response.json();
-    //   setCurrentCountry(data.countryName);
-    // });
+    navigator.geolocation.getCurrentPosition(async (position) => {
+      const { latitude, longitude } = position.coords;
+      const response = await fetch(
+        `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}&longitude=${longitude}`
+      );
+      const data = await response.json();
+      setCurrentCountry(data.countryName);
+    });
   }, []);
 
 

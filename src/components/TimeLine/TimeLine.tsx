@@ -27,35 +27,35 @@ export default function TimeLine() {
     return formattedDate;
   }
 
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     try {
-  //       const today = new Date();
-  //       const start = new Date(today);
-  //       const end = new Date(today);
-  //       end.setDate(end.getDate() + 5); // Forecast for the next 5 days
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const today = new Date();
+        const start = new Date(today);
+        const end = new Date(today);
+        end.setDate(end.getDate() + 5); // Forecast for the next 5 days
 
-  //       const weatherForecastParams = new URLSearchParams({
-  //         apikey: apikey,
-  //         location,
-  //         units,
-  //         startTime: start.toISOString(),
-  //         endTime: end.toISOString(),
-  //       });
+        const weatherForecastParams = new URLSearchParams({
+          apikey: apikey,
+          location,
+          units,
+          startTime: start.toISOString(),
+          endTime: end.toISOString(),
+        });
 
-  //       const response = await fetch(
-  //         `https://api.tomorrow.io/v4/weather/forecast?${weatherForecastParams}`
-  //       );
+        const response = await fetch(
+          `https://api.tomorrow.io/v4/weather/forecast?${weatherForecastParams}`
+        );
 
-  //       const data = await response.json();
-  //       setForecastData(data?.timelines?.daily);      
-  //     } catch (err: any) {
-  //       setError(err.message);
-  //     }
-  //   };
+        const data = await response.json();
+        setForecastData(data?.timelines?.daily);      
+      } catch (err: any) {
+        setError(err.message);
+      }
+    };
 
-  //   fetchData();
-  // }, []);
+    fetchData();
+  }, []);
 
   if (error) {
     return <div>Error fetching data: {error}</div>;

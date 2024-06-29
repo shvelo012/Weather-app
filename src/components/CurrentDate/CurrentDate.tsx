@@ -4,9 +4,9 @@ import Clock from "react-live-clock";
 
 export const CurrentDate = ({ country, continent }: any) => {
   
-  // const [location, setLocation] = useState({ latitude: 0, longitude: 0 });
-  // const [date, setDate] = useState(null);
-  // const [time, setTime] = useState(null);
+  const [location, setLocation] = useState({ latitude: 0, longitude: 0 });
+  const [date, setDate] = useState(null);
+  const [time, setTime] = useState(null);
   const [formattedDate, setFormattedDate] = useState("");
   const [timeZoneExists, setTimeZoneExists] = useState(false);
 
@@ -34,37 +34,37 @@ export const CurrentDate = ({ country, continent }: any) => {
     }
   }, [country]);
 
-  // const options = { method: "GET", headers: { accept: "application/json" } };
+  const options = { method: "GET", headers: { accept: "application/json" } };
 
-  // if (country !== "") {
-  //   fetch(
-  //     `https://api.tomorrow.io/v4/weather/realtime?location=${country}&apikey=QsbR1ArKHFa6tTqqxrKG5SOJw7RFmLMQ`,
-  //     options
-  //   )
-  //     .then((response) => response.json())
-  //     .then((response) => setTime(response.data.time))
-  //     .catch((err) => console.error(err));
-  // }
+  if (country !== "") {
+    fetch(
+      `https://api.tomorrow.io/v4/weather/realtime?location=${country}&apikey=QsbR1ArKHFa6tTqqxrKG5SOJw7RFmLMQ`,
+      options
+    )
+      .then((response) => response.json())
+      .then((response) => setTime(response.data.time))
+      .catch((err) => console.error(err));
+  }
 
-  // console.log(time);
+  console.log(time);
 
-  // useEffect(() => {
-  //   if (navigator.geolocation) {
-  //     navigator.geolocation.getCurrentPosition(success, error);
-  //   } else {
-  //     console.log("Geolocation not supported");
-  //   }
-  //   function success(position: CurrentDateProps) {
-  //     const latitude = position.coords.latitude;
-  //     const longitude = position.coords.longitude;
-  //     setLocation({ latitude, longitude });
-  //     console.log(`Latitude: ${latitude}, Longitude: ${longitude}`);
-  //   }
-  // }, []);
+  useEffect(() => {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(success, error);
+    } else {
+      console.log("Geolocation not supported");
+    }
+    function success(position: CurrentDateProps) {
+      const latitude = position.coords.latitude;
+      const longitude = position.coords.longitude;
+      setLocation({ latitude, longitude });
+      console.log(`Latitude: ${latitude}, Longitude: ${longitude}`);
+    }
+  }, []);
 
-  // function error() {
-  //   console.log("Unable to retrieve your location");
-  // }
+  function error() {
+    console.log("Unable to retrieve your location");
+  }
 
   
 
